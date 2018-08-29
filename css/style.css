@@ -5,7 +5,8 @@
 body {
     width: 100%;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif; 
+    margin-left: 0%;   
 }
 nav{
     background-color: #674582;
@@ -18,7 +19,6 @@ nav{
     font-size: 18px;
     color: #FFFFFF;
 }
-
 .navegação{
 display: flex;
 width: 90%;
@@ -36,7 +36,8 @@ ul{
 .navegacao_menu{
  background-color: #c083b9;
  border-radius: 5px;
- margin-right: 12px;
+ margin-left: -64px;
+ margin-right: 5%;
 }
 .header{
 background-image:  url(../img/banner-claro.png); 
@@ -53,19 +54,21 @@ align-items: center;
 text-transform: uppercase;
 Font-Family: Montserrat;
 Font-Style: ExtraBold;
-Font-Size: 18px;
+Font-Size: 5vw;
 color: #FFFFFF;
 text-Align:Left;
+margin: 4%;
 /* margin-top: -240px; */
-margin-left: 30px;
+/* margin-left: 30px; */
 }
 .subtitulo_banner{
 Font-Family: Montserrat;
 Font-Style: ExtraBold;
-Font-Size: 15px;
+Font-Size: 4vw;
 color: #FFFFFF;
 text-Align:Left;
-margin-left: 30px; 
+margin: 5%;
+
 }
 .btn-banner{
     border-radius: 5px;
@@ -90,6 +93,7 @@ line-height:18px;
     align-items: center;
     padding: 5% 0;
     margin-top: -20px;
+    margin:10px;
 
     }
 .imagem_mulheres img{
@@ -108,6 +112,7 @@ line-height:18px;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    margin-right: 5%;
     
 }
 .imagem_mulheres{
@@ -120,11 +125,12 @@ footer{
     font-size: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 2%;
     width: 100%;
-    height: 40%;
-
+    height: 50%;
+    color: #FFFFFF;
+    object-fit: contain;
 }
 .rodape{
     list-style: none;
@@ -132,7 +138,74 @@ footer{
     font-size: 120%;
     margin: 10% 0;
     width: 100%;
+    display: flex;
+    height: 59px;
+    align-items: center;
+    text-align: center;
 }
-.rodape_logo{
+ .rodape_logo{
     width: 37%;
+    color: #FFFFFF;
 }
+.home_rodape{
+    color: #ffffff;
+    text-align: center;
+    width: 13%;
+    
+}
+.conheca_rodape{
+    color: #ffffff;
+    text-align: center;
+    width: 13%;
+    
+}
+.rodape_link{
+    color: #ffffff;
+    text-align: center;
+    width: 13%;
+}
+
+@media (min-width: 768px) {
+    .navegacao_menu{
+        display: none;
+    }
+    .navegacao_logo{
+        margin-right: 45px;
+        margin-left: -12%;
+        width: 35%;
+        top: 2px;
+        
+    }
+    ul{    
+       
+        display: flex;
+        position: fixed;
+        Font-Family: Montserrat;
+        Font-Style: ExtraBold;
+        Font-Size: 2vw;
+        color: #FFFFFF;
+        text-Align: Left;
+        margin-top: -5%;
+        margin-left: 13%;
+        width: 35%;
+        font-size: 2vw;
+        padding: -12%;
+        justify-content: flex-start;
+    }
+    li{
+        margin: %;
+        width: 46%;
+    }
+    .logos{   
+        display: flex;
+        position: relative;
+        margin-top: -9%;
+        margin-left: 80%;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .logos > img{
+        margin: 5%;
+    }
+}
+
